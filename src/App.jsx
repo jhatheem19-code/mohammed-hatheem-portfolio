@@ -1,13 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About"; 
+import About from "./components/About";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import TechStack from "./components/TechStack";
-import Testimonials from "./components/Testimonials";
+import WorkStyle from "./components/WorkStyle";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
         <Projects />
         <Services />
         <TechStack />
-        <Testimonials />
+        <WorkStyle />
         <Contact />
         <Footer />
       </main>

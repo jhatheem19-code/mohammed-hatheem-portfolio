@@ -7,45 +7,46 @@ function Hero() {
 
         <div className="hero-content">
           <span className="hero-tag">
-            WEB DEVELOPMENT • AI SOLUTIONS • FREELANCE
+            WEB DEVELOPMENT • ARTIFICIAL INTELLIGENCE • EXPLORING & BUILDING
           </span>
 
           <h1>
-            Build Your Ideas
-            <span> Into Reality.</span>
+            Building Ideas.
+            <span> Exploring Technology.</span>
           </h1>
 
           <p className="hero-description">
-            I build modern, responsive and business-focused websites,
-            web applications and AI-powered solutions for startups,
-            businesses and individuals.
+            I’m Mohammed Hatheem, a Computer Science student passionate about
+            Web Development and Artificial Intelligence. I enjoy building web
+            applications, exploring AI technologies, and turning what I learn
+            into practical projects and new ideas.
           </p>
 
           <div className="hero-actions">
-            <a href="#contact" className="primary-btn">
-              Hire Me
+            <a href="#projects" className="primary-btn">
+              View My Projects
               <ArrowRight size={18} />
             </a>
 
-            <a href="#projects" className="secondary-btn">
-              View My Work
+            <a href="#contact" className="secondary-btn">
+              Contact Me
             </a>
           </div>
 
           <div className="hero-trust">
             <div>
               <CheckCircle2 size={17} />
-              <span>Modern Responsive Design</span>
+              <span>Web Development</span>
             </div>
 
             <div>
               <CheckCircle2 size={17} />
-              <span>Clean & Scalable Code</span>
+              <span>AI Learning & Exploration</span>
             </div>
 
             <div>
               <CheckCircle2 size={17} />
-              <span>Available for Freelance</span>
+              <span>Research & Practical Projects</span>
             </div>
           </div>
         </div>
@@ -61,13 +62,13 @@ function Hero() {
           </div>
 
           <div className="floating-card floating-card-top">
-            <strong>Full Stack</strong>
-            <span>Web Development</span>
+            <strong>Web Development</strong>
+            <span>Building & Learning</span>
           </div>
 
           <div className="floating-card floating-card-bottom">
-            <strong>AI + Automation</strong>
-            <span>Modern Solutions</span>
+            <strong>AI & Technology</strong>
+            <span>Exploring & Researching</span>
           </div>
 
         </div>

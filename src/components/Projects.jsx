@@ -12,9 +12,9 @@ function Projects() {
           </div>
 
           <p>
-            A selection of web development and AI projects focused on
-            practical solutions, modern interfaces and real-world use cases.
-          </p>
+            A selection of web development projects and AI explorations focused on
+            practical learning, modern interfaces, and real-world applications.
+            </p>
         </div>
 
         <div className="projects-grid">

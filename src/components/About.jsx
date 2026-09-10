@@ -8,20 +8,27 @@ function About() {
 
           <h2>
             Passionate About
-            <span> Building for the Future</span>
-          </h2>
+            <span> Web Development & AI</span>
+            </h2>
 
           <p>
-            I'm J Mohammed Hatheem, a Computer Science student and
-            Web Developer focused on building modern, responsive and
-            practical digital solutions.
-          </p>
-
-          <p>
-            I enjoy working with web technologies, learning AI, researching
-            new ideas and turning concepts into real-world products for
-            businesses, startups and individuals.
-          </p>
+            I’m Mohammed Hatheem, a Computer Science student with a strong interest in
+            Web Development and Artificial Intelligence. I enjoy building web
+            applications, learning new technologies, and continuously improving my
+            development skills.
+            </p>
+            
+            <p>
+              I’m also passionate about learning and working with AI technologies. I enjoy
+              exploring how AI systems work, experimenting with new ideas, and researching
+              emerging technologies and their real-world applications.
+              </p>
+              
+            <p>
+              My goal is to continuously strengthen my skills in Web Development and AI
+              while exploring innovative ideas through learning, research, and practical
+              development.
+              </p>
 
           <div className="about-tags">
             <span>Web Development</span>

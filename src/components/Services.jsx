@@ -16,10 +16,10 @@ function Services() {
           </div>
 
           <p>
-            From professional business websites to modern web applications
-            and AI-powered solutions, I help turn ideas into practical
-            digital products.
-          </p>
+            I build modern websites and web applications while exploring AI
+            technologies and applying what I learn through practical, real-world
+            projects.
+            </p>
         </div>
 
         <div className="services-grid">

@@ -9,7 +9,7 @@ import {
 function Contact() {
   const email = "jhatheem19@gmail.com";
 
-  const whatsappNumber = "9014758318";
+  const whatsappNumber = "919014758318";
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
@@ -22,18 +22,18 @@ function Contact() {
         {/* LEFT SIDE */}
         <div className="contact-content">
           <span className="section-eyebrow">
-            LET&apos;S WORK TOGETHER
+            LET&apos;S CONNECT
           </span>
 
           <h2>
-            Have a Project in Mind?
-            <span> Let&apos;s Build It.</span>
+            Have an Idea or Project?
+            <span> Let&apos;s Connect.</span>
           </h2>
 
           <p>
-            Looking for a modern website, web application or AI-powered
-            solution? Share your idea with me and let&apos;s discuss how we can
-            turn it into a professional digital product.
+            I&apos;m open to discussing web development projects,
+            collaborations, and opportunities to explore practical ideas
+            involving modern web technologies and Artificial Intelligence.
           </p>
 
           {/* MAIN CTA BUTTONS */}
@@ -107,7 +107,7 @@ function Contact() {
 
               <div>
                 <span>Availability</span>
-                <strong>Open for Freelance Projects</strong>
+                <strong>Open to Projects & Collaborations</strong>
               </div>
             </div>
           </div>
@@ -116,13 +116,15 @@ function Contact() {
         {/* RIGHT SIDE */}
         <div className="contact-form-card">
           <span className="contact-form-label">
-            START A PROJECT
+            GET IN TOUCH
           </span>
 
-          <h3>Tell Me About Your Project</h3>
+          <h3>Tell Me About Your Idea</h3>
 
-          <form action="https://formspree.io/f/xwlkajpj"
-          method="POST">
+          <form
+            action="https://formspree.io/f/xwlkajpj"
+            method="POST"
+          >
             <div className="form-group">
               <label htmlFor="name">
                 Your Name
@@ -153,7 +155,7 @@ function Contact() {
 
             <div className="form-group">
               <label htmlFor="project">
-                Project Type
+                Enquiry Type
               </label>
 
               <select
@@ -163,7 +165,7 @@ function Contact() {
                 required
               >
                 <option value="" disabled>
-                  Select a project type
+                  Select an enquiry type
                 </option>
 
                 <option value="Business Website">
@@ -182,8 +184,12 @@ function Contact() {
                   Web Application
                 </option>
 
-                <option value="AI Integration">
-                  AI Integration
+                <option value="AI / Technology Idea">
+                  AI / Technology Idea
+                </option>
+
+                <option value="Collaboration">
+                  Collaboration
                 </option>
 
                 <option value="Other">
@@ -194,14 +200,14 @@ function Contact() {
 
             <div className="form-group">
               <label htmlFor="message">
-                Tell me about your project
+                Tell me about your idea
               </label>
 
               <textarea
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Briefly describe what you want to build..."
+                placeholder="Briefly describe your project, idea or collaboration..."
                 required
               />
             </div>
@@ -210,12 +216,12 @@ function Contact() {
               type="submit"
               className="contact-submit"
             >
-              Send Project Enquiry
+              Send Message
             </button>
           </form>
 
           <p className="form-note">
-            I usually respond to project enquiries as soon as possible.
+            I&apos;ll respond as soon as possible.
           </p>
         </div>
 

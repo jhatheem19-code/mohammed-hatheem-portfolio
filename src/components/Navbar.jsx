@@ -4,13 +4,15 @@ import { useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
- const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Services", href: "#services" },
-  { name: "Contact", href: "#contact" },
-];
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Services", href: "#services" },
+    { name: "Technologies", href: "#technologies" },
+    { name: "How I Work", href: "#work-style" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
     <header className="navbar">
@@ -34,7 +36,7 @@ function Navbar() {
         </nav>
 
         <a href="#contact" className="work-button">
-          Let's Work Together
+          Let&apos;s Connect
         </a>
 
         <button
@@ -63,7 +65,7 @@ function Navbar() {
             className="mobile-work-button"
             onClick={() => setMenuOpen(false)}
           >
-            Let's Work Together
+            Let&apos;s Connect
           </a>
         </nav>
       )}

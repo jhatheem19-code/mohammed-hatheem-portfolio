@@ -59,7 +59,7 @@ const techIcons = {
 
 function TechStack() {
   return (
-    <section className="tech-section">
+    <section id="technologies" className="tech-section">
       <div className="section-container">
 
         <div className="tech-heading">
@@ -68,9 +68,8 @@ function TechStack() {
           </span>
 
           <h2>
-            Technologies I
-            <span> Work With</span>
-          </h2>
+            Technologies I<span> Use & Explore</span>
+            </h2>
         </div>
 
         <div className="tech-grid">
