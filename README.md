@@ -1,16 +1,69 @@
-# React + Vite
+# J Mohammed Hatheem — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my journey, projects, skills, and interests in Web Development and Artificial Intelligence.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I'm Mohammed Hatheem, a Computer Science student with a strong interest in Web Development and Artificial Intelligence.
 
-## React Compiler
+I enjoy building web applications, learning new technologies, and continuously improving my development skills. I'm also passionate about exploring how AI systems work, experimenting with new ideas, and researching emerging technologies and their real-world applications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+My goal is to continuously strengthen my skills in Web Development and AI through learning, research, experimentation, and practical development.
 
-## Expanding the ESLint configuration
+## Portfolio Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern and responsive portfolio design
+- About Me section
+- Featured Projects
+- Services
+- Technologies I Use & Explore
+- How I Work section
+- Contact and project enquiry form
+- WhatsApp contact integration
+- LinkedIn and GitHub integration
+- Responsive design for desktop, tablet, and mobile
+
+## Featured Projects
+
+### Business E-Commerce Website
+
+A modern and responsive e-commerce website concept designed for businesses to showcase products and create a professional online presence.
+
+### Business Landing Website
+
+A clean and responsive business landing page focused on modern UI design and clear presentation.
+
+### Jarvis DevFlow
+
+An ongoing AI-powered software engineering project exploring how Artificial Intelligence can assist different stages of the Software Development Life Cycle.
+
+## Technologies I Use & Explore
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Python
+- MySQL
+- Git
+- GitHub
+- VS Code
+- AI Technologies
+
+## How I Work
+
+My approach focuses on:
+
+- Practical learning
+- Responsive development
+- Clean and maintainable code
+- Continuous technology exploration
+
+I strengthen my skills by applying what I learn through projects, experimentation, and hands-on development.
+
+## Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jhatheem19-code/mohammed-hatheem-portfolio.git
