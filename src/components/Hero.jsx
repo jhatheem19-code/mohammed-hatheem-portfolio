@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import profileImage from "../assets/profile.png";
 
 function Hero() {
   return (
@@ -54,11 +55,9 @@ function Hero() {
         <div className="hero-image-wrapper">
 
           <div className="hero-image-card">
-            <img
-              src="/images/profile/profile.png"
-              alt="J Mohammed Hatheem"
-              className="hero-profile-image"
-            />
+            <img src={profileImage}
+            alt="J Mohammed Hatheem"
+            className="hero-profile-image"/>
           </div>
 
           <div className="floating-card floating-card-top">

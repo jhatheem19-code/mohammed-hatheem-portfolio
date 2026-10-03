@@ -49,6 +49,7 @@ function ProjectCard({ project, index }) {
 
         {/* PROJECT LINKS */}
         <div className="project-links">
+
           <div>
             {project.liveUrl ? (
               <a
@@ -57,6 +58,15 @@ function ProjectCard({ project, index }) {
                 rel="noreferrer"
               >
                 View Project
+                <ArrowUpRight size={16} />
+              </a>
+            ) : project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Project Preview
                 <ArrowUpRight size={16} />
               </a>
             ) : (
@@ -76,6 +86,7 @@ function ProjectCard({ project, index }) {
               <ArrowUpRight size={15} />
             </a>
           )}
+
         </div>
 
       </div>
