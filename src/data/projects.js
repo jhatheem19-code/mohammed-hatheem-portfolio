@@ -46,7 +46,7 @@ const projects = [
   id: 4,
   title: "AI FAQ Assistant",
   category: "AI • FULL-STACK DEVELOPMENT",
-  status: "Completed Project",
+  status: "Naan Mudhalvan Project",
   description:
     "An AI-powered FAQ platform with intelligent question answering, FAQ management, semantic search, secure authentication, role-based access, and Google Gemini integration.",
   image: faqImage,
@@ -59,7 +59,7 @@ const projects = [
   id: 5,
   title: "AI StudyBuddy",
   category: "AI • EDTECH • FULL-STACK",
-  status: "AI Project",
+  status: "Naan Mudhalvan Project",
   description:
     "An AI-powered learning platform that transforms study materials into summaries, flashcards, quizzes, and personalized study plans with Gemini-powered assistance and intelligent content retrieval.",
   image: studyBuddyImage,
