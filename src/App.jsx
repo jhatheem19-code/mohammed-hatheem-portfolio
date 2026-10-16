@@ -1,9 +1,11 @@
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import TechStack from "./components/TechStack";
+import Team from "./components/Team";
 import WorkStyle from "./components/WorkStyle";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -19,6 +21,7 @@ function App() {
         <Projects />
         <Services />
         <TechStack />
+        <Team />
         <WorkStyle />
         <Contact />
         <Footer />
