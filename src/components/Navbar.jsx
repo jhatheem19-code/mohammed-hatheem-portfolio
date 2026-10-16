@@ -1,3 +1,4 @@
+
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Services", href: "#services" },
     { name: "Technologies", href: "#technologies" },
+    { name: "Team", href: "#team" },
     { name: "How I Work", href: "#work-style" },
     { name: "Contact", href: "#contact" },
   ];
@@ -17,17 +19,23 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-
         <a href="#home" className="brand">
           <div className="brand-logo">JH</div>
 
           <div className="brand-text">
-            <span className="brand-name">J Mohammed Hatheem</span>
-            <span className="brand-role">Web Developer</span>
+            <span className="brand-name">
+              J Mohammed Hatheem
+            </span>
+            <span className="brand-role">
+              Web Developer
+            </span>
           </div>
         </a>
 
-        <nav className="desktop-nav">
+        <nav
+          className="desktop-nav"
+          aria-label="Main navigation"
+        >
           {navLinks.map((link) => (
             <a key={link.name} href={link.href}>
               {link.name}
@@ -40,16 +48,25 @@ function Navbar() {
         </a>
 
         <button
+          type="button"
           className="mobile-menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
         >
-          {menuOpen ? <X size={25} /> : <Menu size={25} />}
+          {menuOpen ? (
+            <X size={25} />
+          ) : (
+            <Menu size={25} />
+          )}
         </button>
       </div>
 
       {menuOpen && (
-        <nav className="mobile-nav">
+        <nav
+          className="mobile-nav"
+          aria-label="Mobile navigation"
+        >
           {navLinks.map((link) => (
             <a
               key={link.name}
