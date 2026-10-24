@@ -3849,3 +3849,96 @@ button {
 #team {
   scroll-margin-top: 76px;
 }
+
+
+/* ======================================
+   TEAM PHOTOS — FULL WIDTH FIX
+   ====================================== */
+
+.team-photo-wrapper {
+  width: 100%;
+  height: 365px;
+  overflow: hidden;
+  background: #f7f9fc;
+}
+
+.team-member-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+/* HATHEEM */
+
+.team-member-card:nth-child(1) .team-member-photo {
+  object-position: center 42%;
+}
+
+/* ASIF */
+
+.team-member-card:nth-child(2) .team-member-photo {
+  object-position: center 32%;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .team-photo-wrapper {
+    height: 380px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .team-photo-wrapper {
+    height: 290px;
+  }
+}
+
+.team-photo-wrapper {
+  width: 100%;
+  height: 365px;
+  overflow: hidden;
+  background: #f7f9fc;
+}
+
+.team-member-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Hatheem */
+.team-member-card:nth-child(1) .team-member-photo {
+  object-position: center 42%;
+}
+
+/* Asif */
+.team-member-card:nth-child(2) .team-member-photo {
+  object-position: center 18%;
+}
+
+@media (max-width: 950px) {
+  .team-photo-wrapper {
+    height: 380px;
+  }
+
+  .team-member-card:nth-child(2) .team-member-photo {
+    object-position: center 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-photo-wrapper {
+    height: 290px;
+  }
+
+  .team-member-card:nth-child(2) .team-member-photo {
+    object-position: center 12%;
+  }
+}
