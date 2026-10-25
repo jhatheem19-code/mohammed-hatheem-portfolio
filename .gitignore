@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Private configuration
+.env
+.env.*
+!.env.example

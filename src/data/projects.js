@@ -14,7 +14,7 @@ const projects = [
     image: ecommerceImage,
     technologies: ["React", "JavaScript", "CSS"],
     liveUrl: "",
-    githubUrl: "AI_FAQ_GITHUB_URL",
+    githubUrl: "",
   },
 
   {
@@ -26,7 +26,7 @@ const projects = [
     image: landingImage,
     technologies: ["React", "Responsive Design", "UI/UX"],
     liveUrl: "",
-    githubUrl: "AI_FAQ_GITHUB_URL",
+    githubUrl: "",
   },
 
   {

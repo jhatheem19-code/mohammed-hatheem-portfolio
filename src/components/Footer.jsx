@@ -10,7 +10,7 @@ function Footer() {
 
   // Replace this with your real WhatsApp number.
   // Format: country code + number, without +, spaces or hyphens.
-  const whatsappNumber = "91XXXXXXXXXX";
+  const whatsappNumber = "919014758318";
 
   const linkedinUrl =
     "https://www.linkedin.com/in/hatheem-ah";

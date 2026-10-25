@@ -71,7 +71,7 @@ function ProjectCard({ project, index }) {
               </a>
             ) : (
               <span className="project-status">
-                Project Preview
+                Demo link coming soon
               </span>
             )}
           </div>
