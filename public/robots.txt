@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohammed-hatheem-j-new.vercel.app/sitemap.xml

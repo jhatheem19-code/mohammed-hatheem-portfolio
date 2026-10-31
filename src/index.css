@@ -3942,3 +3942,62 @@ button {
     object-position: center 12%;
   }
 }
+
+/* Contact form status messages */
+.form-status {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.form-status-success {
+  background: #e8f7ee;
+  color: #166534;
+  border: 1px solid #b7e4c7;
+}
+
+.form-status-error {
+  background: #fdecec;
+  color: #991b1b;
+  border: 1px solid #f5c2c2;
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* About: larger 2x2 summary card (desktop only) */
+@media (min-width: 1051px) {
+  .about-profile-summary {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .about-summary-item {
+    min-height: 170px;
+    padding: 28px 32px;
+  }
+
+  .about-summary-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .about-summary-item:nth-child(1),
+  .about-summary-item:nth-child(2) {
+    border-bottom: 1px solid #dfe5eb;
+  }
+
+  .about-summary-item strong {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .about-summary-item span {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+}

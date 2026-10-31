@@ -10,6 +10,8 @@ function ProjectCard({ project, index }) {
           <img
             src={project.image}
             alt={project.title}
+            loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="project-placeholder">
@@ -66,7 +68,7 @@ function ProjectCard({ project, index }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Project Preview
+                View Code
                 <ArrowUpRight size={16} />
               </a>
             ) : (

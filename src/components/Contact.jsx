@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -11,6 +12,8 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
+const FORM_ENDPOINT = "https://formspree.io/f/xwlkajpj";
+
 function Contact() {
   const email = "jhatheem19@gmail.com";
   const whatsappNumber = "919014758318";
@@ -18,6 +21,43 @@ function Contact() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   const linkedinUrl = "https://www.linkedin.com/in/hatheem-ah";
   const githubUrl = "https://github.com/jhatheem19-code";
+
+  // idle | submitting | success | error
+  const [status, setStatus] = useState("idle");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    // Honeypot: real users never fill this hidden field.
+    // If it has a value, it's a bot: pretend success, send nothing.
+    if (formData.get("_gotcha")) {
+      form.reset();
+      setStatus("success");
+      return;
+    }
+
+    setStatus("submitting");
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: formData,
+      });
+
+      if (response.ok) {
+        form.reset();
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
 
   return (
     <section id="contact" className="contact-section">
@@ -72,7 +112,7 @@ function Contact() {
 
                 <div className="contact-link-text">
                   <strong>WhatsApp</strong>
-                  <span>+91 90147 58318</span>
+                  <span>Message me on WhatsApp</span>
                   <small>Chat with me →</small>
                 </div>
               </a>
@@ -127,10 +167,28 @@ function Contact() {
               Fill out the form and I&apos;ll get back to you as soon as possible.
             </p>
 
-            <form
-              action="https://formspree.io/f/xwlkajpj"
-              method="POST"
-            >
+            <form onSubmit={handleSubmit}>
+
+              {/* HONEYPOT (hidden from users, bots fill it) */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  left: "-9999px",
+                  width: "1px",
+                  height: "1px",
+                  overflow: "hidden",
+                }}
+              >
+                <label htmlFor="website">Leave this field empty</label>
+                <input
+                  id="website"
+                  name="_gotcha"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
 
               <div className="contact-form-row">
 
@@ -226,11 +284,35 @@ function Contact() {
               <button
                 type="submit"
                 className="contact-submit"
+                disabled={status === "submitting"}
               >
                 <FaPaperPlane />
-                <span>Send Message</span>
+                <span>
+                  {status === "submitting" ? "Sending..." : "Send Message"}
+                </span>
                 <FaArrowRight />
               </button>
+
+              {status === "success" && (
+                <p
+                  className="form-status form-status-success"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Thank you! Your message has been sent. I&apos;ll get back to
+                  you soon.
+                </p>
+              )}
+
+              {status === "error" && (
+                <p
+                  className="form-status form-status-error"
+                  role="alert"
+                >
+                  Something went wrong. Please try again, or email me
+                  directly at {email}.
+                </p>
+              )}
 
             </form>
 

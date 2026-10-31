@@ -1,4 +1,3 @@
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -11,7 +10,6 @@ function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Services", href: "#services" },
     { name: "Technologies", href: "#technologies" },
-    { name: "Team", href: "#team" },
     { name: "How I Work", href: "#work-style" },
     { name: "Contact", href: "#contact" },
   ];

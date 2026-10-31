@@ -1,8 +1,8 @@
-import ecommerceImage from "../assets/projects/business-ecommerce.png";
-import landingImage from "../assets/projects/business-landing.png";
+import ecommerceImage from "../assets/projects/business-ecommerce.webp";
+import landingImage from "../assets/projects/business-landing.webp";
 import jarvisImage from "../assets/projects/jarvis-devflow.png";
-import faqImage from "../assets/projects/ai-faq.png";
-import studyBuddyImage from "../assets/projects/ai-studybuddy.png";
+import faqImage from "../assets/projects/ai-faq.webp";
+import studyBuddyImage from "../assets/projects/ai-studybuddy.webp";
 
 const projects = [
   {

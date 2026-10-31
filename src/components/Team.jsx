@@ -1,9 +1,8 @@
-
 import { ArrowUpRight, Users } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import hatheemPhoto from "../assets/team/hatheem.png";
-import asifPhoto from "../assets/team/asif.png";
+import hatheemPhoto from "../assets/profile.webp";
+import asifPhoto from "../assets/team/asif.webp";
 
 const teamMembers = [
   {
@@ -14,8 +13,7 @@ const teamMembers = [
     description:
       "Passionate about developing modern websites, AI-powered applications, and practical software solutions.",
     skills: ["React", "Web Development", "AI", "Automation"],
-    portfolio:
-      "https://jhatheem19-code.github.io/mohammed-hatheem-portfolio/",
+    portfolio: "https://mohammed-hatheem-j-new.vercel.app",
     github: "https://github.com/jhatheem19-code",
     linkedin: "https://www.linkedin.com/in/hatheem-ah",
   },

@@ -1,219 +1,200 @@
 import {
+  FaReact,
+  FaJs,
   FaHtml5,
   FaCss3Alt,
-  FaJs,
-  FaReact,
   FaPython,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
 
-import { SiMysql } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
-import { LuBrainCircuit } from "react-icons/lu";
-
 import {
-  Code2,
-  Target,
-  BarChart3,
-  Lightbulb,
-} from "lucide-react";
+  SiFastapi,
+  SiMysql,
+} from "react-icons/si";
 
-import techStack from "../data/techStack";
-
-const techIcons = {
-  HTML5: {
-    icon: FaHtml5,
-    color: "#E34F26",
-  },
-  CSS3: {
-    icon: FaCss3Alt,
-    color: "#1572B6",
-  },
-  JavaScript: {
-    icon: FaJs,
-    color: "#F7DF1E",
-  },
-  React: {
-    icon: FaReact,
+const technologies = [
+  {
+    name: "React",
+    Icon: FaReact,
     color: "#61DAFB",
   },
-  Python: {
-    icon: FaPython,
+  {
+    name: "JavaScript",
+    Icon: FaJs,
+    color: "#F7DF1E",
+  },
+  {
+    name: "HTML5",
+    Icon: FaHtml5,
+    color: "#E34F26",
+  },
+  {
+    name: "CSS3",
+    Icon: FaCss3Alt,
+    color: "#1572B6",
+  },
+  {
+    name: "Python",
+    Icon: FaPython,
     color: "#3776AB",
   },
-  MySQL: {
-    icon: SiMysql,
+  {
+    name: "FastAPI",
+    Icon: SiFastapi,
+    color: "#009688",
+  },
+  {
+    name: "MySQL",
+    Icon: SiMysql,
     color: "#4479A1",
   },
-  Git: {
-    icon: FaGitAlt,
+  {
+    name: "Git",
+    Icon: FaGitAlt,
     color: "#F05032",
   },
-  GitHub: {
-    icon: FaGithub,
+  {
+    name: "GitHub",
+    Icon: FaGithub,
     color: "#181717",
   },
-  "VS Code": {
-    icon: VscCode,
-    color: "#007ACC",
-  },
-  "AI Integration": {
-    icon: LuBrainCircuit,
-    color: "#6C63FF",
-  },
-};
+];
 
 function TechStack() {
   return (
-    <section id="technologies" className="tech-section">
-      <div className="section-container tech-reference-layout">
-
-        {/* LEFT SIDE */}
-        <div className="tech-reference-content">
+    <section
+      id="technologies"
+      className="tech-section tech-stack-compact"
+    >
+      <div className="section-container">
+        <div className="tech-stack-header">
           <span className="section-eyebrow">
-            TECH TOOLS
+            TECH STACK
           </span>
 
           <h2 className="tech-reference-title">
-            Technologies Behind 
-            <br />
-            <span>My Work.</span>
+            Tools I build with
           </h2>
-
-          <p className="tech-reference-description">
-            I work with modern web development tools and technologies to build 
-            practical projects, strengthen my technical skills, 
-            and explore new ideas.I continuously expand my toolkit as I learn, 
-            experiment, and grow as a developer.
-          </p>
-
-          <div className="tech-reference-stats">
-            <div>
-              <strong>10+</strong>
-              <span>Tools</span>
-            </div>
-
-            <div>
-              <strong>3+</strong>
-              <span>Domains</span>
-            </div>
-
-            <div>
-              <strong>∞</strong>
-              <span>Learning</span>
-            </div>
-          </div>
         </div>
 
-        {/* ORBIT AREA */}
-        <div className="tech-reference-orbit">
+        <ul
+          className="tech-stack-chip-row"
+          aria-label="Technologies I use"
+        >
+          {technologies.map(({ name, Icon, color }) => (
+            <li
+              className="tech-stack-chip"
+              key={name}
+            >
+              <Icon
+                className="tech-stack-chip-icon"
+                style={{ color }}
+                aria-hidden="true"
+                focusable="false"
+              />
 
-          <div className="tech-reference-ring ring-one" />
-          <div className="tech-reference-ring ring-two" />
-          <div className="tech-reference-ring ring-three" />
-          <div className="tech-reference-ring ring-four" />
-
-          <span className="orbit-dot orbit-dot-1" />
-          <span className="orbit-dot orbit-dot-2" />
-          <span className="orbit-dot orbit-dot-3" />
-          <span className="orbit-dot orbit-dot-4" />
-          <span className="orbit-dot orbit-dot-5" />
-          <span className="orbit-dot orbit-dot-6" />
-
-          <div className="tech-reference-center">
-            <div className="tech-reference-center-icon">
-              <Code2 size={24} />
-            </div>
-
-            <strong>Tech Tools</strong>
-
-            <span>
-              Build • Learn • Grow
-            </span>
-          </div>
-
-          <div className="tech-reference-rotator">
-            {techStack.map((tech, index) => {
-              const techData = techIcons[tech.name];
-              const Icon = techData?.icon;
-
-              const angle = index * 36;
-
-              return (
-                <div
-                  className="tech-reference-node"
-                  key={tech.name}
-                  style={{
-                    "--node-angle": `${angle}deg`,
-                  }}
-                >
-                  <div className="tech-reference-angle-fix">
-                    <div className="tech-reference-counter">
-
-                      <div className="tech-reference-icon">
-                        {Icon ? (
-                          <Icon
-                            className="tech-reference-brand-icon"
-                            style={{ color: techData.color }}
-                            aria-hidden="true"
-                          />
-                        ) : (
-                          <span>{tech.short}</span>
-                        )}
-                      </div>
-
-                      <span className="tech-reference-name">
-                        {tech.name}
-                      </span>
-
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
+              <span className="tech-stack-chip-name">
+                {name}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      {/* BOTTOM */}
-      <div className="section-container tech-reference-bottom">
+      <style>{`
+        .tech-stack-compact .tech-stack-header {
+          margin-bottom: 32px;
+        }
 
-        <div className="tech-reference-bottom-item">
-          <div className="tech-reference-bottom-icon">
-            <Target size={26} />
-          </div>
+        .tech-stack-compact .tech-stack-chip-row {
+          display: grid;
+          grid-template-columns: repeat(9, minmax(0, 1fr));
+          gap: 14px;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
 
-          <div>
-            <strong>Explore</strong>
-            <span>Always learning new tools</span>
-          </div>
-        </div>
+        .tech-stack-compact .tech-stack-chip {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 14px;
+          box-sizing: border-box;
+          width: 100%;
+          min-height: 120px;
+          padding: 18px 8px;
+          background: #ffffff;
+          border: 1px solid #dfe5eb;
+          border-radius: 14px;
+          color: #14243b;
+          font-family: inherit;
+          font-size: clamp(14px, 1.15vw, 18px);
+          font-weight: 600;
+          line-height: 1.3;
+          text-align: center;
+          transition: transform 180ms ease;
+        }
 
-        <div className="tech-reference-bottom-item">
-          <div className="tech-reference-bottom-icon">
-            <BarChart3 size={26} />
-          </div>
+        .tech-stack-compact .tech-stack-chip:hover {
+          transform: translateY(-3px);
+        }
 
-          <div>
-            <strong>Build</strong>
-            <span>Turn ideas into real projects</span>
-          </div>
-        </div>
+        .tech-stack-compact .tech-stack-chip-icon {
+          width: clamp(30px, 2.4vw, 42px);
+          height: clamp(30px, 2.4vw, 42px);
+          flex-shrink: 0;
+        }
 
-        <div className="tech-reference-bottom-item">
-          <div className="tech-reference-bottom-icon">
-            <Lightbulb size={26} />
-          </div>
+        .tech-stack-compact .tech-stack-chip-name {
+          white-space: nowrap;
+        }
 
-          <div>
-            <strong>Grow</strong>
-            <span>Improve with every experience</span>
-          </div>
-        </div>
+        @media (max-width: 1200px) {
+          .tech-stack-compact .tech-stack-chip-row {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
 
-      </div>
+          .tech-stack-compact .tech-stack-chip {
+            font-size: 17px;
+          }
+
+          .tech-stack-compact .tech-stack-chip-icon {
+            width: 36px;
+            height: 36px;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .tech-stack-compact .tech-stack-chip-row {
+            gap: 10px;
+          }
+
+          .tech-stack-compact .tech-stack-chip {
+            min-height: 100px;
+            padding: 14px 6px;
+            gap: 10px;
+            font-size: 14px;
+          }
+
+          .tech-stack-compact .tech-stack-chip-icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .tech-stack-compact .tech-stack-chip {
+            transition: none;
+          }
+
+          .tech-stack-compact .tech-stack-chip:hover {
+            transform: none;
+          }
+        }
+      `}</style>
     </section>
   );
 }

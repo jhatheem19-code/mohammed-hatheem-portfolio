@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import profileImage from "../assets/profile.png";
+import profileImage from "../assets/profile.webp";
 
 function Hero() {
   return (
